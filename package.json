@@ -1,5 +1,12 @@
 {
   "name": "portfolio",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "4.2.2",
+    "fullpage.js": "^3.0.8",
+    "fullpages": "^1.0.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  }
 }
