@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "4.2.2",
+    "check-files": "^0.0.2",
     "fullpage.js": "^3.0.8",
     "fullpages": "^1.0.2"
   },
