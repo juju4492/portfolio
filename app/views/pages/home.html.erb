@@ -1,13 +1,38 @@
  <div class="wrapper context" id="wrapper">
 
-  <h1>Wesh c'est mon portfolio les geux et les geusess</h1>
+<section class="section s1" data-anchor="home">
+      <h1>Salut moi c'est Julien </h1>
 
-  <p>Nous sommes le <% t=Time.now %> <%= t.day %>/<%= t.month %>/<%= t.year %> et il est <%= Time.now.strftime("%H:%M:%S") %></p>
-  <div id="fullpage">
-    <div class="section" id="section1"><h1>Salut moi c'est Julien </h1></div>
-    <div class="section" id="section2"><h1>A propos</h1></div>
-    <div class="section" id="section3"><h1>Mes réalisations</h1></div>
-    <div class="section" id="section4"><h1>Mon CV</h1></div>
-  </div>
+    Si vous êtes ici c'est que vous voulez un aperçu de ce que je suis capable de faire.
+    Pour en savoir plus sur moi je vous invite a descendre.
+</section>
+
+<section class="section s2" data-anchor="about">
+      <h1>A Propos </h1>
+
+J’ai 29 ans (mise a jour auto de l’age avec (date.now - 27/11/1990)), après avoir tenté une classe prépa pour devenir ingénieur
+(j’aime concevoir et créer des réponses aux problèmes que j’ai), j’ai finalement fait un Dut mesures physiques qui correspodait
+mieux a mes attentes (a savoir un enseignement axé sur la pratique et non entièrement theorique). Suite a ce diplome j’ai
+travaillé durant 1ans et demi dans un laboratoire d’analyse d’amiante. Suite a cet emploi j’ai réalisé un 1er virage en
+travaillant en tant que hotliner en informatique. Enfin j’ai choisi de me reconvertir dans l’informatique en réalisant une
+formation de dev wb fullstack durant 2 mois au sein de Le Wagon Lyon (lien)
+</section>
+
+<section class="section s3" data-anchor="project">
+      <h1>Mes réalisations</h1>
+
+Projet 1 : TheHonnestMeal <br>
+Projet 2: Low-Boat-Homie  <br>
+Projet 3 : MisterCocktail <br>
+</section>
+
+<section class="section s4" data-anchor="project">
+      <h1>Mon CV</h1>
+        <%= link_to 'PDF', 'JulienGregoire.pdf', download: '' %>
+</section>
+
+<section class="section s5" data-anchor="contact">
+      <h1>Contact</h1>
+</section>
 
 </div>
