@@ -1,81 +1,70 @@
- <div class="wrapper context" id="wrapper">
+<div class="wrapper context" id="wrapper">
 
-<section class="section s1" data-anchor="home">
-      <h1>Salut moi c'est Julien </h1>
+    <section class="section s1" data-anchor="home">
+        <h1>Salut moi c'est Julien </h1> Si vous êtes ici c'est que vous voulez un aperçu de ce que je suis capable de faire. Pour en savoir plus sur moi je vous invite a descendre.
+    </section>
 
-    Si vous êtes ici c'est que vous voulez un aperçu de ce que je suis capable de faire.
-    Pour en savoir plus sur moi je vous invite a descendre.
-</section>
+    <section class="section s2" data-anchor="about">
+        <h1>A Propos </h1>
+        <% dob = Date.new(1990,11,27)
+def age_at(date, dob)
+day_diff = date.day - dob.day
+month_diff = date.month - dob.month - (day_diff < 0 ? 1 : 0)
+date.year - dob.year - (month_diff < 0 ? 1 : 0)
+end  %>
+            <%date = Date.today  %>
+                J'ai
+                <%= age_at(date,dob) %> ans , après avoir tenté une classe prépa pour devenir ingénieur (j’aime concevoir et créer des réponses aux problèmes que j’ai), j’ai finalement fait un Dut mesures physiques qui correspodait mieux a mes attentes (a savoir un enseignement axé sur la pratique et non entièrement theorique). Suite a ce diplome j’ai travaillé durant 1ans et demi dans un laboratoire d’analyse d’amiante. Suite a cet emploi j’ai réalisé un 1er virage en travaillant en tant que hotliner en informatique. Enfin j’ai choisi de me reconvertir dans l’informatique en réalisant une formation de dev wb fullstack durant 2 mois au sein de
+                <%= link_to 'Le Wagon Lyon', 'https://www.lewagon.com/fr/lyon', target: :_blank %>
+    </section>
+    <section class="section s3" data-anchor="project">
+        <h1>Mes projets</h1>
+        <div class="slider">
+            Projet 1 : TheHonnestMeal
+        </div>
+        <div class="slider">
+            Projet 2: Low-Boat-Homie
+        </div>
+        <div class="slider">
+            Projet 3 : MisterCocktail
+        </div>
+    </section>
 
-<section class="section s2" data-anchor="about">
-      <h1>A Propos </h1>
+    <section class="section s4" data-anchor="project">
+        <h1>Mon CV</h1>
+        <%= link_to 'Télcharger mon CV', 'JulienGregoire.pdf', download: '',class: "btn btn-gradient" %>
+            <!--       . réaliser un bouton clickable stylisé pour telécharger mon cv (le lien est deja fonctionnel)
+ -->
+            <!--   . réaliser une timeline a 2-3 éléments importants de ma vie (naissance, bacs s, dut mp, bootcamp)
+ -->
+            <!--   . petite phrase du genre "voila les éléments prcpx de ma vie pour ce qui concerne le pro , mon cv est disponible ci dessous"
+ -->
+    </section>
 
-J’ai 29 ans (mise a jour auto de l’age avec (date.now - 27/11/1990)), après avoir tenté une classe prépa pour devenir ingénieur
-(j’aime concevoir et créer des réponses aux problèmes que j’ai), j’ai finalement fait un Dut mesures physiques qui correspodait
-mieux a mes attentes (a savoir un enseignement axé sur la pratique et non entièrement theorique). Suite a ce diplome j’ai
-travaillé durant 1ans et demi dans un laboratoire d’analyse d’amiante. Suite a cet emploi j’ai réalisé un 1er virage en
-travaillant en tant que hotliner en informatique. Enfin j’ai choisi de me reconvertir dans l’informatique en réalisant une
-formation de dev wb fullstack durant 2 mois au sein de Le Wagon Lyon (lien)
-</section>
+    <section class="section s5" data-anchor="skills">
+        <h1>Mes competences</h1>
+        <h2>Mes capacités en informatique</h2>
+        <p>Ruby, JS, CSS, HTML, rails,git, gihub, heroku</p>
+        <h2>Mes autres competences</h2>
+        <p>Anglais</p>
+        <!-- Mettre les competences sous forme de graph avec % -->
+    </section>
 
-<section class="section s3" data-anchor="project">
-<!-- <div class="slider">
-  Projet 1 : TheHonnestMeal
-</div>
-<div class="slider">
-  Projet 2: Low-Boat-Homie
-</div>
-<div class="slider">
-  Projet 3 : MisterCocktail
-</div> -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+    <section class="section s6" data-anchor="contact">
+        <h1>Contact</h1>
+        <!--           . créer un formulaire de contact
+  . faire en sorte que ce formulaire m'envoi un mal lros du submit vers "julien.gregoire44@gmail.com"
+  . styliser le mail sous la forme
+    - sujet : demande de contact via portfolio
+    - corps du mail
+      * nom de la personne
+      * entreprise
+      * localisation du poste
+      * mail
+      * numéro de téléphone
+      * comment êtes vous tombés sur mon portfolio (can be blank)
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-
-    <div class="item active">
-      <div class="text-center">
-      <img src="img1.jpeg" alt="montagne">
-    </div>
-    </div>
-
-    <div class="item">
-      <div class="text-center">
-        <img src="img1.jpeg" alt="Chicago">
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="text-center">
-      <img src="img3.jpeg" alt="New York">
-      </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</section>
-
-<section class="section s4" data-anchor="project">
-      <h1>Mon CV</h1>
-        <%= link_to 'PDF', 'JulienGregoire.pdf', download: '' %>
-</section>
-
-<section class="section s5" data-anchor="contact">
-      <h1>Contact</h1>
-</section>
+Recuperation des infos de la page de contacts pour stats avec accès admin -->
+    </section>
 
 </div>

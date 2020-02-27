@@ -1,6 +1,7 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 h1 {
   font-size: 5em;
   font-family: arial,helvetica;
@@ -23,18 +24,41 @@ h1 {
   height: 100%;
 }
 
+//Style adapté pour chaque section
 // .s1 {
 //   background-image: image-url("img1.jpg");
 // }
 
-// #section2 {
+// .s2 {
 //   background-image: image-url("img2.jpg");
 // }
 
-// #section3 {
+// .s3 {
 //   background-image: image-url("img3.jpg");
 // }
 
-// #section4 {
+// .s4 {
 //   background-image: image-url("img4.jpg");
 // }
+
+//Bouton de DL du cv
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: blue;
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
+
+
+//Mise en forme du fullpage
+.fp-tableCell {
+ padding: 0 40px;
+}

@@ -11,6 +11,10 @@ class PagesController < ApplicationController
   def cv
   end
 
+  def skills
+  end
+
   def contact
   end
+
 end
