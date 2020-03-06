@@ -51,7 +51,11 @@ end  %>
     </section>
 
     <section class="section s6" data-anchor="contact">
-        <h1>Contact</h1>
+             <h1>Contact</h1>
+              <div id="contact">
+            <%= render 'home/contact_form' , index: @contact %>
+        <%# </div> %>
+  </section>
         <!--           . créer un formulaire de contact
   . faire en sorte que ce formulaire m'envoi un mal lros du submit vers "julien.gregoire44@gmail.com"
   . styliser le mail sous la forme
@@ -65,6 +69,4 @@ end  %>
       * comment êtes vous tombés sur mon portfolio (can be blank)
 
 Recuperation des infos de la page de contacts pour stats avec accès admin -->
-    </section>
-
 </div>

@@ -28,14 +28,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'mail_form'
 gem 'simple_form'
-
+gem 'dotenv-rails', groups: [:development, :test]
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 gem 'jquery-ui-rails'
 
 group :development, :test do
@@ -51,6 +51,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rails_layout'
+  gem 'letter_opener'
 end
 
 group :test do
