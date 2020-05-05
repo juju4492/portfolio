@@ -15,31 +15,35 @@ h1 {
 }
 
 .s1,
-#section2,
-#section3,
-#section4 {
+.s2,
+.s3,
+.s4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  width: 100%;
+}
+//Mise en forme du backgroun color avec opacity en ayant le text pleinement visible
+.text {
+  background: rgba(255, 255, 255, 0.9);
+}
+//Style adapté pour chaque section
+.s1 {
+  background-image: image-url("img1.jpg");
 }
 
-//Style adapté pour chaque section
-// .s1 {
-//   background-image: image-url("img1.jpg");
-// }
+.s2 {
+  background-image: image-url("img2.jpg");
+}
 
-// .s2 {
-//   background-image: image-url("img2.jpg");
-// }
+.s3 {
+  background-image: image-url("img3.jpg");
+}
 
-// .s3 {
-//   background-image: image-url("img3.jpg");
-// }
-
-// .s4 {
-//   background-image: image-url("img4.jpg");
-// }
+.s4 {
+  background-image: image-url("img4.jpg");
+}
 
 //Bouton de DL du cv
 .btn-gradient {
