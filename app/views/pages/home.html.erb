@@ -23,6 +23,7 @@ end  %>
     </div>
     </section>
     <section class="section s3" data-anchor="project" background-image="/img2.jpeg">
+      <div class="text">
         <h1>Mes projets</h1>
         <div class="slider">
             Projet 1 : TheHonnestMeal
@@ -33,9 +34,11 @@ end  %>
         <div class="slider">
             Projet 3 : MisterCocktail
         </div>
+        </div>
     </section>
 
     <section class="section s4" data-anchor="project">
+      <div class="text">
         <h1>Mon CV</h1>
         <%= link_to 'Télcharger mon CV', 'JulienGregoire.pdf', download: '',class: "btn btn-gradient" %>
             <!--       . réaliser un bouton clickable stylisé pour telécharger mon cv (le lien est deja fonctionnel)
@@ -43,21 +46,23 @@ end  %>
             <!--   . réaliser une timeline a 2-3 éléments importants de ma vie (naissance, bacs s, dut mp, bootcamp)
  -->
             <!--   . petite phrase du genre "voila les éléments prcpx de ma vie pour ce qui concerne le pro , mon cv est disponible ci dessous"
- -->
+ --></div>
     </section>
 
     <section class="section s5" data-anchor="skills">
+      <div class="text">
         <h1>Mes competences</h1>
         <h2>Mes capacités en informatique</h2>
         <p>Ruby, JS, CSS, HTML, rails,git, gihub, heroku</p>
         <h2>Mes autres competences</h2>
         <p>Anglais</p>
         <!-- Mettre les competences sous forme de graph avec % -->
+        </div>
     </section>
 
     <section class="section s6" data-anchor="contact">
+      <div class="text">
              <h1>Contact</h1>
-              <div id="contact">
             <%= render 'home/contact_form' , index: @contact %>
         </div>
   </section>
