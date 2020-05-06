@@ -18,18 +18,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- Ajout du script du carroussel -->
+
 
   </head>
   <body>
-    <%= yield %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= yield %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= yield :after_js %>
 
   </body>
+<!--   Scripts fullpage -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.js" integrity="sha256-1xq+cdMDaqP3qT8SzRoHohxeY57LfbJSMaXrzXcwz2M=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
-<script>
+ <script>
     new fullpage("#wrapper", {
     //options here
     licenseKey: 'q2NraPV@b1',
@@ -40,28 +44,10 @@
     anchors: ['home', 'about', 'project', 'cv','skills', 'contact'],
 });
 </script>
-
-<script>
-  const swiper = new Swiper('.blog-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.blog-slider__pagination',
-        clickable: true,
-      }
-    });
-</script>
-
 <script type="text/javascript" src="../dist/fullpage.js"></script>
 <script type="text/javascript">
   var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
   });
 </script>
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script src="sss/sss.min.js"></script><link rel="stylesheet" href="sss/sss.css" type="text/css" media="all"><script>jQuery(function($) {$('.slider').sss();});</script>
