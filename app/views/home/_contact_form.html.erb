@@ -1,7 +1,7 @@
 
 <%= form_for Home.new, url: submit_path, remote: true do |f| %>
     <div class="col-md-12">
-        <%= f.label :name %></br>
+        <%= f.label :Nom %></br>
         <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
 
         <%= f.label :entreprise %></br>
@@ -18,7 +18,7 @@
 
       <%= f.label :message %></br>
       <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                        placeholder: "Send me a message"%></br>
+                        placeholder: "Envoyez moi un message"%></br>
       <div class= "hidden">
         <%= f.label :nickname %>
         <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
