@@ -70,17 +70,15 @@ p {
 
 
 //Mise en forme du fullpage
-.fp-tableCell {
- padding: 0 40px;
- text-align: center;
-}
+// .fp-tableCell {
+//  padding: 0 40px;
+//  text-align: center;
+// }
 
 
 // Mise en forme du carroussel
-// .carousel-item {
-//  img {
-//   max-height: 75%;
-//   max-width: 300px;
-//  }
-
-// }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
