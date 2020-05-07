@@ -19,5 +19,6 @@ class HomeController < ApplicationController
         format.js   { flash.now[:error] = @message = "Message did not send." }
       end
     end
+    redirect_to pages_home_path
   end
 end
