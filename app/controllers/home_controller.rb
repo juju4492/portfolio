@@ -18,6 +18,6 @@ class HomeController < ApplicationController
         format.html { render 'pages/home' }
         format.js   { flash.now[:error] = @message = "Message did not send." }
       end
-    end
-  end
+end
+end
 end
