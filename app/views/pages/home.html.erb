@@ -17,14 +17,17 @@ month_diff = date.month - dob.month - (day_diff < 0 ? 1 : 0)
 date.year - dob.year - (month_diff < 0 ? 1 : 0)
 end  %>
             <%date = Date.today  %>
+            <div class="content">
                <p> Je suis un jeune développeur fullstack de
-                <%= age_at(date,dob) %> ans.</br>
-                Après avoir tenté une classe prépa ingénieur à la fin du lycée (j'aime concevoir et créer des solutions aux problèmes que je rencontre),
+                <%= age_at(date,dob) %> ans.</br></br>
+                Après avoir suivi une classe prépa ingénieur à la fin du lycée (j'aime concevoir et créer des solutions aux problèmes que je rencontre),
                 j'ai finalement fait un DUT Mesures Physiques qui correspondait mieux à mes attentes de l'époque (un enseignement scientifique basé à la fois sur
                 la pratique et la théorie). Une fois diplômé, j'ai travaillé pendant 1an et demi dans un laboratoire d'analyse d'amiante, Eurofins.
+</br></br>
                 A la fin de mon contrat, j'ai effectué un premier virage professionnel en travaillant en tant que hotliner en informatique. L'informatique étant un domaine
-                qui me passionne, j'ai choisit de me reconvertir en réalisant une formation de développeur web fullstack durant 2 mois au sein de
-                <%= link_to 'Le Wagon Lyon', 'https://www.lewagon.com/fr/lyon', target: :_blank %>
+                qui me passionne, j'ai choisi de me reconvertir en réalisant une formation de développeur web fullstack durant 2 mois au sein de
+                <%= link_to 'Le Wagon Lyon', 'https://www.lewagon.com/fr/lyon', target: :_blank %>. J'ai obtenu ma certification en Décembre 2019.
+    </div>
     </p>
     </div>
     </section>
