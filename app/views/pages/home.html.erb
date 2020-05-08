@@ -3,7 +3,7 @@
     <section class="section s1" data-anchor="home">
       <div class="text">
         <h1>Salut moi c'est Julien </h1>
-        <p>Si vous êtes ici c'est que vous voulez un aperçu de ce que je suis capable de faire. Pour en savoir plus sur moi je vous invite a descendre.</p>
+        <p>Si vous êtes ici c'est que vous voulez un aperçu de ce que je suis capable de faire. Pour en savoir plus, je vous invite à descendre afin de découvrir mon parcours, mon expérience, mes projets.</p>
     </div>
     </section>
 
@@ -17,29 +17,21 @@ month_diff = date.month - dob.month - (day_diff < 0 ? 1 : 0)
 date.year - dob.year - (month_diff < 0 ? 1 : 0)
 end  %>
             <%date = Date.today  %>
-               <p> J'ai
-                <%= age_at(date,dob) %> ans , après avoir tenté une classe prépa pour devenir ingénieur (j’aime concevoir et créer des réponses aux problèmes que j’ai), j’ai finalement fait un Dut mesures physiques qui correspodait mieux a mes attentes (a savoir un enseignement axé sur la pratique et non entièrement theorique). Suite a ce diplome j’ai travaillé durant 1an et demi dans un laboratoire d’analyse d’amiante. Suite a cet emploi j’ai réalisé un 1er virage en travaillant en tant que hotliner en informatique. Enfin j’ai choisi de me reconvertir dans l’informatique en réalisant une formation de devellopeur web fullstack durant 2 mois au sein de
+               <p> Je suis un jeune développeur fullstack de
+                <%= age_at(date,dob) %> ans.</br>
+                Après avoir tenté une classe prépa ingénieur à la fin du lycée (j'aime concevoir et créer des solutions aux problèmes que je rencontre),
+                j'ai finalement fait un DUT Mesures Physiques qui correspondait mieux à mes attentes de l'époque (un enseignement scientifique basé à la fois sur
+                la pratique et la théorie). Une fois diplômé, j'ai travaillé pendant 1an et demi dans un laboratoire d'analyse d'amiante, Eurofins.
+                A la fin de mon contrat, j'ai effectué un premier virage professionnel en travaillant en tant que hotliner en informatique. L'informatique étant un domaine
+                qui me passionne, j'ai choisit de me reconvertir en réalisant une formation de développeur web fullstack durant 2 mois au sein de
                 <%= link_to 'Le Wagon Lyon', 'https://www.lewagon.com/fr/lyon', target: :_blank %>
     </p>
     </div>
     </section>
     <section class="section s3" data-anchor="project" background-image="/img2.jpeg">
-<!--       <div class="text">
+      <div class="text">
         <h1>Mes projets</h1>
-
-        <div class="slider">
-            Projet 1 : TheHonnestMeal
-        </div>
-        <div class="slider">
-            Projet 2: Low-Boat-Homie
-        </div>
-        <div class="slider">
-            Projet 3 : MisterCocktail
-        </div>
-
-
- -->
-<div id="demo" class="carousel slide" data-ride="carousel">
+<div id="demo" class="carousel" data-interval="false">
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
     <li data-target="#demo" data-slide-to="1"></li>
@@ -54,17 +46,17 @@ end  %>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img2.jpeg" alt="Chicago" width="1100" height="500">
+      <img src="img2.jpeg" alt="Chicago" width="700" height="500">
       <div class="carousel-caption">
         <h3>Chicago</h3>
         <p>Thank you, Chicago!</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img3.jpeg" alt="New York" width="1100" height="500">
+      <img src="img3.jpeg" alt="New York" width="700" height="500">
       <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
+        <h3>Projet 2: Low-Boat-Homie</h3>
+        <p>Dans le style airbnb, la location de bateaux. Fait pendant la formation. Avec un humour particulié.</p>
       </div>
     </div>
   </div>
@@ -74,6 +66,7 @@ end  %>
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
+</div>
 </div>
     </section>
 
@@ -95,9 +88,9 @@ end  %>
         <h2>Mes capacités en informatique</h2>
         <p>Ruby, JS, CSS, HTML, rails, git, github, heroku</p>
         <h2>Mes autres competences</h2>
-        <p>Anglais</p>
-        <p>Adaptabilité</p>
-        <p>A l'écoute</p>
+        <p>Anglais </br>
+        Adaptabilité </br>
+        A l'écoute</p>
         <!-- Mettre les competences sous forme de graph avec % -->
         </div>
     </section>
