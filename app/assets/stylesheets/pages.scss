@@ -97,6 +97,11 @@ p {
   left: 5vw !important;
 }
 
+img {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 
 // Mise en forme pour les téléphones
 @media (max-width: 400px) {
