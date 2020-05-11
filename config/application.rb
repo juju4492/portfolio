@@ -1,5 +1,5 @@
 require_relative 'boot'
-
+config.exceptions_app = self.routes
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"

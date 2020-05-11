@@ -1,23 +1,21 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 // Mise en forme des paragraphes/titres
 h1 {
   font-size: 5em;
-  font-family: arial,helvetica;
+  font-family: arial, helvetica;
   color: black;
   margin: 0;
   padding: 0;
 }
 
 p {
- font-size: 17px;
+  font-size: 17px;
 }
 
-
 .section {
-  text-align:center;
+  text-align: center;
 }
 
 .s1,
@@ -32,6 +30,7 @@ p {
   height: 100%;
   width: 100%;
 }
+
 //Mise en forme du background color avec opacity en ayant le text pleinement visible
 .text {
   background: rgba(255, 255, 255, 0.5);
@@ -84,20 +83,18 @@ p {
   color: white;
 }
 
-
 // Mise en forme du fullpage
 .fp-tableCell {
- padding: 0 40px;
- text-align: center;
+  padding: 0 40px;
+  text-align: center;
 }
 
-
 // Mise en forme du carroussel
-  .carousel-inner img {
-    width: 100%;
-    height: 75vh;
-    border-radius: 30px;
-  }
+.carousel-inner img {
+  width: 100%;
+  height: 75vh;
+  border-radius: 30px;
+}
 
 .carousel-indicators {
   position: relative;
@@ -110,22 +107,21 @@ img {
   object-position: 50% 50%;
 }
 
-
 // Mise en forme pour les téléphones
 @media (max-width: 400px) {
   p {
-    font-size : 15px;
+    font-size: 15px;
   }
 }
+
 @media (max-width: 670px) {
   .phone {
     text-align: justify;
   }
 }
 
-
 @media (max-height: 600px) {
-    p {
-    font-size : 13.5px;
+  p {
+    font-size: 13.5px;
   }
 }

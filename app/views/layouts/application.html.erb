@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--   ajout de  fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--   ajout de  fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet" />
+      <!-- Ajout des librairies fullpages.js -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+      <!--  Métadonnées -->
+    <title><%= meta_title %></title>
+<meta name="description" content="<%= meta_description %>">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet" />
-  <!-- Ajout des librairies fullpages.js -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-  <title>Julien GREGOIRE</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%# <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-     <%= stylesheet_link_tag 'application', media: 'all' %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<!-- Ajout du script du carroussel -->
+<!-- Facebook Open Graph data -->
+<meta property="og:title" content="<%= meta_title %>" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="<%= request.original_url %>" />
+<meta property="og:image" content="<%= meta_image %>" />
+<meta property="og:description" content="<%= meta_description %>" />
+<meta property="og:site_name" content="<%= meta_title %>" />
 
-
-  </head>
-  <body>
-  <%= yield %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <%= yield :after_js %>
-
-  </body>
-<!--   Scripts fullpage -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.js" integrity="sha256-1xq+cdMDaqP3qT8SzRoHohxeY57LfbJSMaXrzXcwz2M=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
- <script>
-    new fullpage("#wrapper", {
-    //options here
-    licenseKey: 'q2NraPV@b1',
-    autoScrolling: true,
-    scrollHorizontally: true,
-    navigation: true,
-    keyboardScrolling: true,
-    anchors: ['home', 'about', 'project', 'cv','skills', 'contact'],
-});
-</script>
-<script type="text/javascript" src="../dist/fullpage.js"></script>
-<script type="text/javascript">
-  var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
-  });
-</script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script src="sss/sss.min.js"></script><link rel="stylesheet" href="sss/sss.css" type="text/css" media="all"><script>jQuery(function($) {$('.slider').sss();});</script>
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
+<meta name="twitter:title" content="<%= meta_title %>">
+<meta name="twitter:description" content="<%= meta_description %>">
+<meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
+<meta name="twitter:image:src" content="<%= meta_image %>">
+      <!-- autre -->
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <%# <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag 'application', media: 'all' %>
+      <!-- Ajout bootstrap 4.4 -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <%= yield %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= yield :after_js %>
+   </body>
+   <!--   Scripts fullpage -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.js" integrity="sha256-1xq+cdMDaqP3qT8SzRoHohxeY57LfbJSMaXrzXcwz2M=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+   <script>
+      new fullpage("#wrapper", {
+      //options here
+      licenseKey: 'q2NraPV@b1',
+      autoScrolling: true,
+      scrollHorizontally: true,
+      navigation: true,
+      keyboardScrolling: true,
+      anchors: ['home', 'about', 'project', 'cv','skills', 'contact'],
+      });
+   </script>
+   <script type="text/javascript" src="../dist/fullpage.js"></script>
+   <script type="text/javascript">
+      var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+      });
+   </script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script src="sss/sss.min.js"></script>
+   <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+   <script>jQuery(function($) {$('.slider').sss();});</script>
