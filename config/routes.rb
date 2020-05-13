@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # match "/422", to: "errors#unacceptable", via: :all
   # match "/500", to: "errors#internal_server_error", via: :all
   post 'submit', to: 'home#create'
+  # Routes liées au SEO
+  get '/sitemap.xml' => 'sitemaps#index', defaults: { format: 'xml' }
+  get "/robots.:format", to: "pages#robots"
 end
 # fonctionne mais juste sur la page du form
 # Rails.application.routes.draw do
