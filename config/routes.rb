@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get '/sitemap.xml' => 'sitemaps#index', defaults: { format: 'xml' }
   get "/robots.:format", to: "pages#robots"
   # match "/old_path_to_posts/:id", to: redirect("/posts/%{id}s")
+  match '(*any)', to: redirect(subdomain: ''), via: :all, constraints: {subdomain: 'www'}
+
 end
 # fonctionne mais juste sur la page du form
 # Rails.application.routes.draw do
