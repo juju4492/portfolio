@@ -1,5 +1,5 @@
 meta_product_name: "Portfolio Julien GREGOIRE"
 meta_title: "Portfolio Julien GREGOIRE - Le site web qu'il vous faut"
 meta_description: "Portfolio du développeur web fullstack Julien GREGOIRE, disponible pour tous vos projets web."
-meta_image: "skills.jxr" # should exist in `app/assets/images/`
+meta_image: "skills.jpg" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards
