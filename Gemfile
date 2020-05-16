@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
+#Graphiques de compétences
+gem 'chartjs-ror'
 gem 'webpacker', '~> 4.x'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -37,6 +39,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass'
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 gem 'jquery-ui-rails'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
