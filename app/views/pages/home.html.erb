@@ -104,21 +104,49 @@ end  %>
       <div class="text">
         <h1>Mes competences</h1>
         <h2>Mes capacités en informatique</h2>
-        <p>Ruby, JS, CSS, HTML, rails, git, github, heroku</p>
+        <p>JS, CSS, HTML, RUby on rails, git, github, heroku, wordpress</p>
         <h2>Mes autres competences</h2>
         <p>Anglais </br>
         Adaptabilité </br>
         Travail en équipe </br>
         Communication </br>
         A l'écoute</p>
-        <!-- Mettre les competences sous forme de graph avec % -->
-        </div>
+       <!--  <div class="charts">
+        <%
+@data = {
+  labels: ["JS", "CSS", "HTML", "Ruby on Rails", "Git", "GitHub", "Heroku", "wordpress"],
+  datasets: [
+    {
+        label: "My First dataset",
+        backgroundColor: "rgba(220,220,220,0.2)",
+        borderColor: "rgba(220,220,220,1)",
+        data: [20, 50, 50, 50, 40, 40, 60, 10]
+    },
+  ]
+}%>
+<% @options = {
+  responsive: true,
+          ticks: {
+            suggestedMin: 00,
+            suggestedMax: 100
+          }
+} %>
+<%= radar_chart @data, @options %>
+</div>
+            </div> -->
     </section>
 
     <section class="section s6" data-anchor="contact">
       <div class="text">
              <h1>Contact</h1>
             <%= render 'home/contact_form' , index: @contact %>
+
+            <p>Ou sinon vous pouvez me contacter sur les réseaux sociaux</p>
+
+            <span><a href="mailto:julien.gregoire44@gmail.com"><i class="fas fa-sm fa-at fa-3x"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/julien-gregoire-42395386" target="_blank"><i class="fab fa-sm fa-linkedin fa-3x"></i></a></span>
+            <span><a href="https://www.malt.fr/profile/juliengregoire" target="_blank"> <i><img alt="Malt" src="malt.png"width="26.5" height="30"></i></a></span>
+            <span><a href="https://www.facebook.com/JulienGregoireWeb" target="_blank"><i class="fab fa-sm fa-facebook fa-3x"></i></a></span>
             <p> Merci de votre viste</p>
         </div>
   </section>
