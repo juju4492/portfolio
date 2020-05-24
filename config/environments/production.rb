@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+#Force HTTPS in production
+config.force_ssl = true
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -86,7 +89,7 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
-  # Do not dump schema after migrations.
+  # Ajout des caractéristiques mail
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { :host => 'new_app_name.herokuapp.com' }
 config.action_mailer.delivery_method = :smtp
