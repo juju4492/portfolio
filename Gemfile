@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
+#Génération du sitemap du site
+gem 'sitemap_generator'
 #cloudinary pour stocker et optimiser les images
 gem 'cloudinary'
 #Graphiques de compétences
