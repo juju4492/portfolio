@@ -2,9 +2,13 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
+#cloudinary pour stocker et optimiser les images
+gem 'cloudinary'
 #Graphiques de compétences
 gem 'chartjs-ror'
 gem 'webpacker', '~> 4.x'
+#Optimisation des images
+gem 'image_optimizer'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
