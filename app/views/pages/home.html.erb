@@ -11,7 +11,7 @@
 
 <section class="section s2" data-anchor="about">
    <div class="text">
-      <h1>A Propos </h1>
+      <h2>A Propos </h2>
       <% dob = Date.new(1990,11,27)
          def age_at(date, dob)
          day_diff = date.day - dob.day
@@ -36,7 +36,7 @@
 
 <section class="section s3" data-anchor="project">
    <div class="text">
-      <h1>Mes réalisations</h1>
+      <h2>Mes réalisations</h2>
       <div id="demo" class="carousel" data-interval="false">
 
 <!--         indicators -->
@@ -49,7 +49,11 @@
 
 <!--          The slideshow -->
          <div class="carousel-inner">
-                        <div class="carousel-item active">
+<!-- 1) Les technos utilisées
+2) Nombre de personnes au global sur le projet/ durée approximative
+3) Description -->
+
+              <div class="carousel-item active">
                <%= cl_image_tag("Thehonestmeal.jpg", :client_hints => :true, :crop => "scale",
                   :quality => :auto, :sizes => "100vw", :alt => "The Honnest Meal") %>
                <div class="carousel-caption">
@@ -57,10 +61,12 @@
                   <h2>
                      <%= link_to "Projet 1: TheHonnestMeal", 'http://www.thehonestmeal.com/', target: :_blank %>
                   </h2>
+                  <p>👨‍💻 Ruby - Ruby On Rails - JS - HTML - Chart.js - Geocoder - Cloudinary</p>
+                  <p>4 personnes sur le projet pendant 10 jours</p>
                   <p>Le projet réalisé durant ma formation au Wagon</p>
+                </div>
                </div>
-               </div>
-            </div>
+              </div>
             <div class="carousel-item">
                <%= cl_image_tag("LowBoatHomie.jpg", :client_hints => :true, :crop => "scale",
                   :quality => :auto, :sizes => "100vw", :alt => "Low boat homie") %>
@@ -69,6 +75,8 @@
                   <h2>
                      <%= link_to "Projet 2: Low-Boat-Homie", 'https://low-boat-homie.herokuapp.com/', target: :_blank %>
                   </h2>
+                  <p>👨‍💻 Ruby - Ruby On Rails - CSS - JS - HTML - SAAS - Geocoder - Cloudinary -Bootstrap</p>
+                  <p>4 personnes pendant une semaine</p>
                   <p>Dans le style airbnb, la location de bateaux. Fait pendant la formation. Avec un humour particulier.</p>
                </div>
              </div>
@@ -82,6 +90,7 @@
                   <h2>
                      <%= link_to "Projet 3 : La Gazette des grenouilles", 'http://lagazettedesgrenouilles.fr/', target: :_blank %>
                   </h2>
+                  <p>👨‍💻 Wordpress -Contact Form7- Wordpress Importer - WP Telegram</p>
                   <p> Projet personnel pour la communauté d'un jeu auquel je joue</p>
                </div>
              </div>
@@ -94,6 +103,8 @@
                   <h2>
                      <%= link_to "Projet 4 : Les Logements Solidaires", 'https://www.les-logements-solidaires.com/', target: :_blank %>
                   </h2>
+                  <p>👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - PostgreSQL - Geocoder</p>
+                  <p>Organisation de 11 développeurs, 8 développeurs Ruby on Rails (1 Canada, 1 Inde, 6 France) et 2 développeurs Front-end .Temps de développement : 7 jours</p>
                   <p> Projet solidaire realisé avec une equipe d'autres développeurs pour permettre de mettre en lien
                      personnel hospitalier et propriétaires durant la crise du covid-19.
                   </p>
@@ -115,17 +126,17 @@
 
 <section class="section s4" data-anchor="project">
    <div class="text">
-      <h1>Mon CV</h1>
+      <h2>Mon CV</h2>
       <%= link_to 'Télécharger mon CV', 'JulienGregoire.pdf', download: '',class: "btn btn-primary" %>
    </div>
 </section>
 
 <section class="section s5" data-anchor="skills">
    <div class="text">
-      <h1>Mes competences</h1>
-      <h2>Mes capacités en informatique</h2>
+      <h2>Mes competences</h2>
+      <h3>Mes capacités en informatique</h3>
       <p>JS, CSS, HTML, RUby on rails, git, github, heroku, wordpress</p>
-      <h2>Mes autres competences</h2>
+      <h3>Mes autres competences</h3>
       <p>Anglais </br>
          Adaptabilité </br>
          Travail en équipe </br>
@@ -137,7 +148,7 @@
 
 <section class="section s6" data-anchor="contact">
   <div class="text">
-    <h1>Contact</h1>
+    <h2>Contact</h2>
       <%= render 'home/contact_form' , index: @contact %>
       <p>Ou sinon vous pouvez me contacter sur les réseaux sociaux</p>
       <span><a href="mailto:julien.gregoire44@gmail.com"><i class="fas fa-sm fa-at fa-3x"></i></a></span>
