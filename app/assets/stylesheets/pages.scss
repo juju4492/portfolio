@@ -31,41 +31,6 @@ p {
   width: 100%;
 }
 
-//Mise en forme du background color avec opacity en ayant le text pleinement visible
-.text {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 0px 10px 10px 10px;
-  border-radius: 30px;
-}
-
-.content {
-  text-align: justify;
-}
-
-//Style adapté pour chaque section
-.s1 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590313455/moutain1.jpg");
-}
-
-.s2 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590313778/moutain2.jpg");
-}
-
-.s3 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590313895/moutain3.jpg");
-}
-
-.s4 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590314043/moutain4.jpg");
-}
-
-.s5 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590487491/skills.jpg");
-}
-
-.s6 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590487507/contact.jpg");
-}
 
 //Bouton de DL du cv
 .btn-gradient {
@@ -81,56 +46,6 @@ p {
 .btn-gradient:hover {
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
-}
-
-// Mise en forme du fullpage
-.fp-tableCell {
-  padding: 0 40px;
-  text-align: center;
-}
-
-// Mise en forme du carroussel
-.carousel-inner img {
-  width: 100%;
-  height: 75vh;
-  border-radius: 30px;
-}
-
-.carousel-indicators {
-  position: relative;
-  bottom: 20px;
-  left: 5vw !important;
-}
-
-img {
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-#chart {
-  position: relative;
-  padding: 8px;
-  max-width: 50vw !important;
-  max-height: 50vh !important;
-  bottom: 20px;
-}
-
-// Mise en forme pour les téléphones
-@media (max-width: 400px) {
-  p {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 670px) {
-  .phone {
-    text-align: justify;
-  }
-}
-
-@media (max-height: 600px) {
-  p {
-    font-size: 13.5px;
-  }
 }
 
 

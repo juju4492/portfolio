@@ -1,0 +1,41 @@
+// Mise en forme du fullpage
+.fp-tableCell {
+  padding: 0 40px;
+  text-align: center;
+}
+
+//Mise en forme du background color avec opacity en ayant le text pleinement visible
+.text {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0px 10px 10px 10px;
+  border-radius: 30px;
+}
+
+.content {
+  text-align: justify;
+}
+
+//Style adapté pour chaque section
+.s1 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590313455/moutain1.jpg");
+}
+
+.s2 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590313778/moutain2.jpg");
+}
+
+.s3 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590313895/moutain3.jpg");
+}
+
+.s4 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590314043/moutain4.jpg");
+}
+
+.s5 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590487491/skills.jpg");
+}
+
+.s6 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590487507/contact.jpg");
+}
