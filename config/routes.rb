@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/sitemap.xml' => 'sitemaps#index', defaults: { format: 'xml' }
   get "/robots.:format", to: "pages#robots"
 
-  # Redirect www to non-www URLs
-  match '(*any)', to: redirect(subdomain: ''), via: :all, constraints: {subdomain: 'www'}
+  # # Redirect www to non-www URLs
+  # match '(*any)', to: redirect(subdomain: ''), via: :all, constraints: {subdomain: 'www'}
 
 end
