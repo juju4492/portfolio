@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get "/robots.:format", to: "pages#robots"
 
   # # Redirect www to non-www URLs
-  # match '(*any)', to: redirect(subdomain: ''), via: :all, constraints: {subdomain: 'www'}
+  match '(*any)', to: redirect(subdomain: 'www'), via: :all, constraints: {subdomain: ''}
 
 end
