@@ -84,7 +84,7 @@
 <!--             </div> -->
             <div class="carousel-item">
                <%= cl_image_tag("LGDG.jpg", :width => :auto, :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "La Gazette des grenouilles") %>
+                  :quality => :auto, :sizes => "100vw", :alt => "La Gazette des grenouilles",:flags=>"lossy") %>
                <div class="carousel-caption">
                 <div class="project-text">
                   <h2>
@@ -97,7 +97,7 @@
             </div>
             <div class="carousel-item">
                <%= cl_image_tag("LogementsSolidaires.jpg", :width => :auto, :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "Les Logements Solidaires") %>
+                  :quality => :auto, :sizes => "100vw", :alt => "Les Logements Solidaires",:flags=>"lossy") %>
                <div class="carousel-caption">
                 <div class="project-text">
                   <h2>
