@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
+gem 'actionpack-action_caching'
+gem 'actionpack-page_caching'
 #Génération du sitemap du site
 gem 'sitemap_generator'
 #cloudinary pour stocker et optimiser les images
