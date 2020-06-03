@@ -55,7 +55,7 @@
 
               <div class="carousel-item active">
                <%= cl_image_tag("Thehonestmeal.jpg", :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "The Honnest Meal") %>
+                  :quality => :auto, :sizes => "100vw", :alt => "The Honnest Meal", :loading => "lazy", :fetch_format => :auto) %>
                <div class="carousel-caption">
                 <div class="project-text">
                   <h2>
@@ -69,7 +69,7 @@
               </div>
             <div class="carousel-item">
                <%= cl_image_tag("LowBoatHomie.jpg", :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "Low boat homie") %>
+                  :quality => :auto, :sizes => "100vw", :alt => "Low boat homie",:loading => "lazy", :fetch_format => :auto) %>
                <div class="carousel-caption">
                 <div class="project-text">
                   <h2>
@@ -84,7 +84,8 @@
 <!--             </div> -->
             <div class="carousel-item">
                <%= cl_image_tag("LGDG.jpg", :width => :auto, :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "La Gazette des grenouilles",:flags=>"lossy") %>
+                  :quality => :auto, :sizes => "100vw", :alt => "La Gazette des grenouilles",:flags=>"lossy",
+                  :loading => "lazy", :fetch_format => :auto) %>
                <div class="carousel-caption">
                 <div class="project-text">
                   <h2>
@@ -97,7 +98,8 @@
             </div>
             <div class="carousel-item">
                <%= cl_image_tag("LogementsSolidaires.jpg", :width => :auto, :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "Les Logements Solidaires",:flags=>"lossy") %>
+                  :quality => :auto, :sizes => "100vw", :alt => "Les Logements Solidaires",:flags=>"lossy",
+                  :loading => "lazy", :fetch_format => :auto) %>
                <div class="carousel-caption">
                 <div class="project-text">
                   <h2>
