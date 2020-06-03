@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+config.action_controller.perform_caching = true
 #Force HTTPS in production
 config.force_ssl = true
 
