@@ -102,6 +102,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
+    http_accept_language (2.1.1)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     image_optimizer (1.8.0)
@@ -268,6 +269,7 @@ DEPENDENCIES
   cloudinary
   coffee-rails (~> 4.2)
   dotenv-rails
+  http_accept_language
   image_optimizer
   jbuilder (~> 2.5)
   jquery-rails (~> 4.1, >= 4.1.1)
