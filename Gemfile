@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
+# Internationnalisation des languages
+gem 'rails-i18n'
+
 gem 'actionpack-action_caching'
 gem 'actionpack-page_caching'
 #Génération du sitemap du site
