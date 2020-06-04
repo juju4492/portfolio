@@ -31,4 +31,5 @@
 
 en:
   hello: "Hi, it's me Julien"
-
+  placeholder: "Type here your message"
+  thanks: "Thank you for your visit"
