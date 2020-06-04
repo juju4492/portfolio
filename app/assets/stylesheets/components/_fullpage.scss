@@ -1,21 +1,38 @@
 // Mise en forme du fullpage
 .fp-tableCell {
   padding: 0 40px;
-  text-align: center;
 }
-
 //Mise en forme du background color avec opacity en ayant le text pleinement visible
 .text {
   background: rgba(255, 255, 255, 0.7);
   padding: 0px 10px 10px 10px;
   border-radius: 30px;
+  text-align: middle;
+  width: 90vw;
 }
 
 .content {
   text-align: justify;
 }
 
+.project-text {
+  width: 100%;
+}
+
 //Style adapté pour chaque section
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
 .s1 {
   background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590313455/moutain1.jpg");
 }
