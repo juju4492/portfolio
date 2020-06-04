@@ -9,9 +9,9 @@
       <link rel="amphtml" href="<%= url_for(format: :amp, only_path: false) %>" >
       <!--   ajout de  fonts -->
       <!-- Ajout des librairies fullpages.js -->
-      <link rel="stylesheet" type="text/css" href="fullpage.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
-      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+<!--       <link rel="stylesheet" type="text/css" href="fullpage.css" /> -->
+<!--       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+ -->      <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
       <!--  Métadonnées -->
     <title><%= meta_title %></title>
 <meta name="description" content="<%= meta_description %>">
@@ -41,6 +41,14 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--       Bootstrap utilisé -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- Lien vers les 2 versions du site -->
+<!-- <nav>
+        <ul>
+    <li><%= link_to 'Français', root_path(locale: :fr) %></li>
+    <li><%= link_to 'English', root_path(locale: :en) %></li>
+  </ul>
+  </nav> -->
    </head>
    <body>
       <%= yield %>
@@ -48,7 +56,7 @@
       <%= yield :after_js %>
    </body>
    <!--   Scripts fullpage -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
    <script>
       new fullpage("#wrapper", {
       //options here
@@ -58,5 +66,5 @@
       keyboardScrolling: true,
       anchors: ['home', 'about', 'project', 'cv','skills', 'contact'],
       });
-   </script>
+   </script> -->
  <!--   <script type="text/javascript" src="../dist/fullpage.js"></script> -->
