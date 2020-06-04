@@ -1,0 +1,27 @@
+
+<%= form_for Home.new, url: submit_path, remote: true do |f| %>
+    <div class="col-md-12">
+        <%= f.label :Name %></br>
+        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+
+        <%= f.label :Company %></br>
+        <%= f.text_field  :entreprise, required: true, class: "contact-form-text-area" %></br>
+
+        <%= f.label :Location %></br>
+        <%= f.text_field  :localisation, required: true, class: "contact-form-text-area" %></br>
+
+        <%= f.label :Telephone %></br>
+        <%= f.text_field  :telephone, required: true, class: "contact-form-text-area" %></br>
+
+        <%= f.label :email %></br>
+        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+
+      <%= f.label :Message %></br>
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
+                        placeholder: "Type your message here" %></br>
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+  <div class="col-md-12" id="flash-message">
+    <%= render 'home/flash' %>
+  </div>
