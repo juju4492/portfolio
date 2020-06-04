@@ -11,15 +11,20 @@ require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
 require "rails/test_unit/railtie"
+# The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
 module Portfolio
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+    # Configuration des variables de languages
+    config.i18n.available_locales = [:fr, :en]
+    config.i18n.default_locale = :fr
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
