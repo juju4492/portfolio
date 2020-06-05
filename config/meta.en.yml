@@ -1,0 +1,6 @@
+meta_product_name: "Portfolio Julien GREGOIRE"
+meta_title: "Portfolio Julien GREGOIRE - The website you need as you expect"
+meta_description: "Julien GREEGOIRE, fullstack web developper(front-end and back-end) creating with passion. Création of
+websites in  Ruby, HTML, CSS, JS and Wordpress. Come and visit my website if you need more informations"
+meta_image: "skills.jpg" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
