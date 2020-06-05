@@ -23,6 +23,7 @@ module Portfolio
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     # Configuration des variables de languages
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.yml').to_s]
     config.i18n.available_locales = [:fr, :en]
     config.i18n.default_locale = :fr
 
