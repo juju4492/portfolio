@@ -11,7 +11,7 @@ class Home < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "Contact Form Inquiry",
+      :subject => "Demande de contact depuis le portfolio de la part de #{name}",
       :to => "julien.gregoire44@gmail.com",
       :from => %("#{name}" <#{email}>)
     }
