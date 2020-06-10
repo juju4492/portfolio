@@ -1,0 +1,170 @@
+/* line 24, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 29, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-text {
+  padding-bottom: 20px;
+}
+
+/* line 32, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 45, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slides img {
+  border-radius: 30px;
+}
+
+/* line 48, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+ul.slides {
+  display: block;
+  position: relative;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+/* line 58, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* line 67, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+ul.slides input {
+  display: none;
+}
+
+/* line 72, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slide-container {
+  display: block;
+}
+
+/* line 76, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+
+/* line 86, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slide-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 91, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+/* line 102, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+/* line 111, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slide-image:hover + .carousel-controls label {
+  opacity: 0.5;
+}
+
+/* line 115, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+/* line 119, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+/* line 125, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+/* line 131, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+/* line 140, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+/* line 150, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+/* line 156, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+input:checked + .slide-container .carousel-controls label {
+  display: block;
+}
+
+/* line 160, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+  opacity: 1;
+}
+
+/* line 170, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+input:checked + .slide-container .nav label {
+  display: block;
+}

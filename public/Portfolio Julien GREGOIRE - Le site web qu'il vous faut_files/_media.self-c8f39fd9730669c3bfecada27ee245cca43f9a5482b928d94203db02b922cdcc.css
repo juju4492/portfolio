@@ -1,0 +1,18 @@
+@media (max-width: 400px) {
+  /* line 3, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_media.scss */
+  p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 670px) {
+  /* line 9, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_media.scss */
+  .phone {
+    text-align: justify;
+  }
+}
+@media (max-height: 600px) {
+  /* line 15, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_media.scss */
+  p {
+    font-size: 13.5px;
+  }
+}

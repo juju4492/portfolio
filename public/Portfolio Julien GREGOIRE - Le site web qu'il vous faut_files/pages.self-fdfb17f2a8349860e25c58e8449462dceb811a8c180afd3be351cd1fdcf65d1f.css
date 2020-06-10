@@ -1,0 +1,62 @@
+/* line 5, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+h1 {
+  font-size: 5em;
+  font-family: arial, helvetica;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+p {
+  font-size: 17px;
+}
+
+/* line 17, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+.section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 25, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: blue;
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+}
+
+/* line 35, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
+
+/* line 42, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+.fa-linkedin {
+  color: #3077B5;
+}
+
+/* line 46, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+.fa-facebook {
+  color: #4267B2;
+}
+
+/* line 51, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+i img {
+  position: relative;
+  bottom: 7px;
+}
+
+/* line 59, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/pages.scss */
+.project-text {
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+  border-radius: 30px;
+  padding: 0px 10px 10px 10px;
+}

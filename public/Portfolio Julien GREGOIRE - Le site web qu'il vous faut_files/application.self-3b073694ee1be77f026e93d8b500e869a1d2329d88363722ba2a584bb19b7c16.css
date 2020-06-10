@@ -1,0 +1,268 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 24, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 29, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-text {
+  padding-bottom: 20px;
+}
+
+/* line 32, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 45, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slides img {
+  border-radius: 30px;
+}
+
+/* line 48, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+ul.slides {
+  display: block;
+  position: relative;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+/* line 58, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* line 67, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+ul.slides input {
+  display: none;
+}
+
+/* line 72, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slide-container {
+  display: block;
+}
+
+/* line 76, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+
+/* line 86, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slide-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 91, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+/* line 102, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+/* line 111, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.slide-image:hover + .carousel-controls label {
+  opacity: 0.5;
+}
+
+/* line 115, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+/* line 119, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+/* line 125, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+/* line 131, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+/* line 140, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+/* line 150, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+/* line 156, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+input:checked + .slide-container .carousel-controls label {
+  display: block;
+}
+
+/* line 160, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+  opacity: 1;
+}
+
+/* line 170, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_carousel.scss */
+input:checked + .slide-container .nav label {
+  display: block;
+}
+
+/* line 2, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.fp-tableCell {
+  padding: 0 40px;
+}
+
+/* line 6, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.text {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 30px;
+  text-align: middle;
+  width: 90vw;
+}
+
+/* line 14, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.content {
+  text-align: justify;
+}
+
+/* line 24, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+/* line 37, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.s1 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590313455/moutain1.jpg");
+}
+
+/* line 41, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.s2 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590313778/moutain2.jpg");
+}
+
+/* line 45, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.s3 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590313895/moutain3.jpg");
+}
+
+/* line 49, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.s4 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590314043/moutain4.jpg");
+}
+
+/* line 53, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.s5 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590487491/skills.jpg");
+}
+
+/* line 57, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_fullpage.scss */
+.s6 {
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590487507/contact.jpg");
+}
+
+@media (max-width: 400px) {
+  /* line 3, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_media.scss */
+  p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 670px) {
+  /* line 9, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_media.scss */
+  .phone {
+    text-align: justify;
+  }
+}
+@media (max-height: 600px) {
+  /* line 15, /home/julien/code/juju4492/portfolio/app/assets/stylesheets/components/_media.scss */
+  p {
+    font-size: 13.5px;
+  }
+}
