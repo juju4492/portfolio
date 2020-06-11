@@ -1,25 +1,27 @@
 
 <%= form_for Home.new, url: submit_path, remote: true do |f| %>
-    <div class="col-md-12">
-        <%= f.label :Name %></br>
-        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+<div class="container">
+      <div class="row">
+        <%= f.label :Name , class: "col-25"%>
+        <%= f.text_field  :name, required: true, class: "col-75" %>
+</div>
+        <%= f.label :Company , class: "col-25"%>
+        <%= f.text_field  :entreprise, required: true, class: "col-75" %>
 
-        <%= f.label :Company %></br>
-        <%= f.text_field  :entreprise, required: true, class: "contact-form-text-area" %></br>
+        <%= f.label :Location , class: "col-25"%>
+        <%= f.text_field  :localisation, required: true, class: "col-75" %>
 
-        <%= f.label :Location %></br>
-        <%= f.text_field  :localisation, required: true, class: "contact-form-text-area" %></br>
+        <%= f.label :Telephone , class: "col-25"%></br>
+        <%= f.text_field  :telephone, required: true, class: "col-75" %>
 
-        <%= f.label :Telephone %></br>
-        <%= f.text_field  :telephone, required: true, class: "contact-form-text-area" %></br>
+        <%= f.label :email, class: "col-25"%>
+        <%= f.text_field :email, required: true, class: "col-75" %>
 
-        <%= f.label :email %></br>
-        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
-
-      <%= f.label :Message %></br>
+      <%= f.label :Message ,class: "col-25"%>
       <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                        placeholder: "Type your message here" %></br>
+                        placeholder: "Type your message here" %>
       <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+    </div>
     </div>
   <% end %>
   <div class="col-md-12" id="flash-message">
