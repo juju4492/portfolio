@@ -2,8 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // Mise en forme des paragraphes/titres
+.socials{
+position: absolute;
+bottom: 20px;
 
-
+}
 .section {
   text-align: center;
     display: flex;
