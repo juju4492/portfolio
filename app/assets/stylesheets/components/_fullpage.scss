@@ -2,10 +2,11 @@
 .fp-tableCell {
   padding: 0 40px;
 }
+
 //Mise en forme du background color avec opacity en ayant le text pleinement visible
 .text {
-  background: rgba(255,255,255,0.7);
-  padding:10px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
   border-radius: 30px;
   text-align: middle;
   width: 90vw;
@@ -16,12 +17,7 @@
   text-align: justify;
 }
 
-// .project-text {
-//   width: 100%;
-// }
-
 //Style adapté pour chaque section
-
 .s1,
 .s2,
 .s3,
@@ -35,6 +31,7 @@
   height: 100vh;
   width: 100%;
 }
+
 .s1 {
   background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590313455/moutain1.jpg");
 }

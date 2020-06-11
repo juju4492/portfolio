@@ -1,15 +1,12 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 // Mise en forme des paragraphes/titres
-.socials{
-position: absolute;
-bottom: 20px;
-
+.socials {
+  position: absolute;
+  bottom: 20px;
 }
+
 .section {
   text-align: center;
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -30,23 +27,21 @@ bottom: 20px;
   color: white;
 }
 
-
 // Mise en forme des logos sociaux
 .fa-linkedin {
-  color :#3077B5
+  color: #3077B5
 }
 
 .fa-facebook {
- color: #4267B2
+  color: #4267B2
 }
 
-i{
+i {
   img {
-position: relative;
-bottom: 7px;
+    position: relative;
+    bottom: 7px;
+  }
 }
-}
-
 
 // Mise en forme de la partie texte des projets
 .project-text {
@@ -60,5 +55,4 @@ bottom: 7px;
   color: black;
   border-radius: 30px;
   padding: 0px 10px 10px 10px;
-
 }
