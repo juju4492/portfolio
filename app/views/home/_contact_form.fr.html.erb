@@ -17,9 +17,9 @@
         <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
 
       <%= f.label :Message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
+      <%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area",
                         placeholder: "Envoyez moi un message" %></br>
-      <%= f.submit 'Envoyer message', class: 'btn btn-primary' %>
+      <%= f.submit 'Envoyer message', class: 'button-send' %>
     </div>
   <% end %>
   <div class="col-md-12" id="flash-message">
