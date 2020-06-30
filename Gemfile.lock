@@ -76,7 +76,7 @@ GEM
     chromedriver-helper (2.1.1)
       archive-zip (~> 0.10)
       nokogiri (~> 1.8)
-    cloudinary (1.15.0)
+    cloudinary (1.16.0)
       aws_cf_signer
       rest-client
     coffee-rails (4.2.2)
