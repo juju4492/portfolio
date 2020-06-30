@@ -1,5 +1,4 @@
 <div class="wrapper context" id="wrapper">
-
 <section class="section s1" data-anchor="home">
    <div class="text">
       <h1><%= t "hello" %> </h1>
@@ -8,10 +7,9 @@
       </div>
    </div>
 </section>
-
 <section class="section s2" data-anchor="about">
    <div class="text">
-      <h2>About me</h2>
+      <h2>A Propos </h2>
       <% dob = Date.new(1990,11,27)
          def age_at(date, dob)
          day_diff = date.day - dob.day
@@ -33,130 +31,128 @@
       </div>
    </div>
 </section>
-
-<section class="section s3" data-anchor="project">
+<section class="s3 section" data-anchor="project">
    <div class="text">
-      <h2>Mes projects</h2>
-      <div id="demo" class="carousel" data-interval="false">
-
-<!--         indicators -->
-         <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-            <li data-target="#demo" data-slide-to="3"></li>
-         </ul>
-
-<!--          The slideshow -->
-         <div class="carousel-inner">
-<!-- 1) Les technos utilisées
-2) Nombre de personnes au global sur le projet/ durée approximative
-3) Description -->
-
-              <div class="carousel-item active">
-               <%= cl_image_tag("Thehonestmeal.jpg", :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "The Honnest Meal", :loading => "lazy", :fetch_format => :auto) %>
-               <div class="carousel-caption">
-                <div class="project-text">
-                  <h2>
+      <h2>Mes réalisations</h2>
+      <div class="carousel">
+         <ul class="slides">
+            <!-- Projet 1 : The Honest meal -->
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+               <div class="slide-image">
+                  <%= cl_image_tag("Thehonestmeal.jpg", :client_hints => :true, :crop => "scale",
+                     :quality => :auto, :sizes => "100vw", :alt => "The Honnest Meal",
+                     :loading => "lazy", :fetch_format => :auto) %>
+                  <div class="project-text">
+                     <h2>
                      <%= link_to "Projet 1: TheHonnestMeal", 'http://www.thehonestmeal.com/', target: :_blank %>
-                  </h2>
-                  <p>👨‍💻 Ruby - Ruby On Rails - JS - HTML - Chart.js - Geocoder - Cloudinary</p>
-                  <p>4 personnes sur le projet pendant 10 jours</p>
-                  <p>Le projet réalisé durant ma formation au Wagon</p>
-                </div>
+                     <p>👨‍💻 Ruby - Ruby On Rails - JS - HTML - Chart.js - Geocoder - Cloudinary</br>
+                        4 personnes sur le projet pendant 10 jours</br>
+                        Le projet réalisé durant ma formation au Wagon
+                     </p>
+                  </div>
                </div>
-              </div>
-            <div class="carousel-item">
-               <%= cl_image_tag("LowBoatHomie.jpg", :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "Low boat homie",:loading => "lazy", :fetch_format => :auto) %>
-               <div class="carousel-caption">
-                <div class="project-text">
-                  <h2>
-                     <%= link_to "Projet 2: Low-Boat-Homie", 'https://low-boat-homie.herokuapp.com/', target: :_blank %>
-                  </h2>
-                  <p>👨‍💻 Ruby - Ruby On Rails - CSS - JS - HTML - SAAS - Geocoder - Cloudinary -Bootstrap</p>
-                  <p>4 personnes pendant une semaine</p>
-                  <p>Dans le style airbnb, la location de bateaux. Fait pendant la formation. Avec un humour particulier.</p>
+               <div class="carousel-controls">
+                  <label for="img-3" class="prev-slide">
+                  <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-2" class="next-slide">
+                  <span>&rsaquo;</span>
+                  </label>
                </div>
-             </div>
+            </li>
+            <!-- Projet 2 -->
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+               <div class="slide-image">
+                  <%= cl_image_tag("LGDG.jpg", :width => :auto, :client_hints => :true, :crop => "scale",
+                     :quality => :auto, :sizes => "100vw", :alt => "La Gazette des grenouilles",:flags=>"lossy",
+                     :loading => "lazy", :fetch_format => :auto) %>
+                  <div class="project-text">
+                     <h2>
+                        <%= link_to "Projet 2 : La Gazette des grenouilles", 'http://lagazettedesgrenouilles.fr/', target: :_blank %>
+                     </h2>
+                     <p>👨‍💻 Wordpress -Contact Form7- Wordpress Importer - WP Telegram</br>
+                        Projet personnel pour la communauté d'un jeu auquel je joue
+                     </p>
+                  </div>
+               </div>
+               <div class="carousel-controls">
+                  <label for="img-1" class="prev-slide">
+                  <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-3" class="next-slide">
+                  <span>&rsaquo;</span>
+                  </label>
+               </div>
+            </li>
+            <!-- Projet 3 -->
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+               <div class="slide-image">
+                  <%= cl_image_tag("LogementsSolidaires.jpg", :width => :auto, :client_hints => :true, :crop => "scale",
+                     :quality => :auto, :sizes => "100vw", :alt => "Les Logements Solidaires",:flags=>"lossy",
+                     :loading => "lazy", :fetch_format => :auto) %>
+                  <div class="project-text">
+                     <h2>
+                        <%= link_to "Projet 3 : Les Logements Solidaires", 'https://www.les-logements-solidaires.com/', target: :_blank %>
+                     </h2>
+                     <p>👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - PostgreSQL - Geocoder</br>
+                        Organisation de 11 développeurs, 8 développeurs Ruby on Rails (1 Canada, 1 Inde, 6 France) et 2 développeurs Front-end .Temps de développement : 7 jours</br>
+                        Projet solidaire realisé avec une equipe d'autres développeurs pour permettre de mettre en lien
+                        personnel hospitalier et propriétaires durant la crise du covid-19.
+                     </p>
+                  </div>
+               </div>
+               <div class="carousel-controls">
+                  <label for="img-2" class="prev-slide">
+                  <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-1" class="next-slide">
+                  <span>&rsaquo;</span>
+                  </label>
+               </div>
+            </li>
+            <!-- Controller en forme de points -->
+            <div class="carousel-dots">
+               <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+               <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+               <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
             </div>
-<!--             </div> -->
-            <div class="carousel-item">
-               <%= cl_image_tag("LGDG.jpg", :width => :auto, :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "La Gazette des grenouilles",:flags=>"lossy",
-                  :loading => "lazy", :fetch_format => :auto) %>
-               <div class="carousel-caption">
-                <div class="project-text">
-                  <h2>
-                     <%= link_to "Projet 3 : La Gazette des grenouilles", 'http://lagazettedesgrenouilles.fr/', target: :_blank %>
-                  </h2>
-                  <p>👨‍💻 Wordpress -Contact Form7- Wordpress Importer - WP Telegram</p>
-                  <p> Projet personnel pour la communauté d'un jeu auquel je joue</p>
-               </div>
-             </div>
-            </div>
-            <div class="carousel-item">
-               <%= cl_image_tag("LogementsSolidaires.jpg", :width => :auto, :client_hints => :true, :crop => "scale",
-                  :quality => :auto, :sizes => "100vw", :alt => "Les Logements Solidaires",:flags=>"lossy",
-                  :loading => "lazy", :fetch_format => :auto) %>
-               <div class="carousel-caption">
-                <div class="project-text">
-                  <h2>
-                     <%= link_to "Projet 4 : Les Logements Solidaires", 'https://www.les-logements-solidaires.com/', target: :_blank %>
-                  </h2>
-                  <p>👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - PostgreSQL - Geocoder</p>
-                  <p>Organisation de 11 développeurs, 8 développeurs Ruby on Rails (1 Canada, 1 Inde, 6 France) et 2 développeurs Front-end .Temps de développement : 7 jours</p>
-                  <p> Projet solidaire realisé avec une equipe d'autres développeurs pour permettre de mettre en lien
-                     personnel hospitalier et propriétaires durant la crise du covid-19.
-                  </p>
-               </div>
-             </div>
-            </div>
-         </div>
-
-<!--          left and right controls -->
-         <a class="carousel-control-prev" href="#demo" data-slide="prev">
-         <span class="carousel-control-prev-icon"></span>
-         </a>
-         <a class="carousel-control-next" href="#demo" data-slide="next">
-         <span class="carousel-control-next-icon"></span>
-         </a>
+         </ul>
       </div>
    </div>
 </section>
-
+</section>
 <section class="section s4" data-anchor="project">
    <div class="text">
-      <h2>My resume</h2>
-      <%= link_to 'Télécharger mon CV', 'JulienGregoire.pdf', download: '',class: "btn btn-primary" %>
+      <h2>Mon CV</h2>
+      <%= link_to 'Télécharger mon CV', 'JulienGregoire.pdf', download: '',class: "button-download " %>
    </div>
 </section>
-
 <section class="section s5" data-anchor="skills">
    <div class="text">
-      <h2>My skills</h2>
-      <h3>Informatic skils</h3>
-      <p>JS, CSS, HTML, RUby on rails, git, github, heroku, wordpress</p>
-      <h3>Other skills</h3>
-      <p>English </br>
+      <h2>Mes competences</h2>
+      <h3>Mes capacités en informatique</h3>
+      <p>JS, CSS, HTML, Ruby on rails, git, github, heroku, wordpress</p>
+      <h3>Mes autres competences</h3>
+      <p>Anglais </br>
          Adaptabilité </br>
-         Team work</br>
+         Travail en équipe </br>
          Communication </br>
-         <!-- A l'écoute -->
+         A l'écoute
       </p>
-    </div>
+   </div>
 </section>
-
 <section class="section s6" data-anchor="contact">
-  <div class="text">
-    <h2>Contact</h2>
+   <div class="text">
+      <h2>Contact</h2>
       <%= render 'home/contact_form' , index: @contact %>
       <p> <%= t "contact" %></p>
-      <span><a href="mailto:julien.gregoire44@gmail.com"><i class="fas fa-sm fa-at fa-3x"></i></a></span>
-      <span><a href="https://www.linkedin.com/in/julien-gregoire-42395386" target="_blank"><i class="fab fa-sm fa-linkedin fa-3x"></i></a></span>
+      <span><a href="mailto:julien.gregoire44@gmail.com"><i class="fas fa-sm fa-at fa-2x"></i></a></span>
+      <span><a href="https://www.linkedin.com/in/julien-gregoire-42395386" target="_blank"><i class="fab fa-sm fa-linkedin fa-2x"></i></a></span>
       <span><a href="https://www.malt.fr/profile/juliengregoire" target="_blank"> <i><img alt="Malt" src="malt.png"width="26.5" height="30"></i></a></span>
-      <span><a href="https://www.facebook.com/JulienGregoireWeb" target="_blank"><i class="fab fa-sm fa-facebook fa-3x"></i></a></span>
+      <span><a href="https://www.facebook.com/JulienGregoireWeb" target="_blank"><i class="fab fa-sm fa-facebook fa-2x"></i></a></span>
       <p> <%= t "thanks" %></p>
-  </div>
+   </div>
 </section>
