@@ -1,2 +1,2 @@
 //= link skills.jpg
-//= link application.css
+//= link application.scss

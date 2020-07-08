@@ -1,12 +1,11 @@
-<div class="wrapper context" id="wrapper">
 <section class="section s1" data-anchor="home">
-   <div class="text">
-      <h1><%= t "hello" %> </h1>
-      <div class="phone">
-         <p>Si vous êtes ici c'est que vous voulez un aperçu de ce que je suis capable de faire. Pour en savoir plus, je vous invite à descendre afin de découvrir mon parcours, mon expérience, mes projets.</p>
-      </div>
+   <div class="text phone">
+    <h1>Julien GREGOIRE </br></h1>
+      <h2><%= t "devellopeur" %></h2>
    </div>
 </section>
+
+<div class="body">
 <section class="section s2" data-anchor="about">
    <div class="text">
       <h2>A Propos </h2>
@@ -28,6 +27,7 @@
             qui me passionne, j'ai choisi de me reconvertir en réalisant une formation de développeur web fullstack durant 2 mois au sein de
             <%= link_to 'Le Wagon Lyon', 'https://www.lewagon.com/fr/lyon', target: :_blank %>. J'ai obtenu ma certification en Décembre 2019.
          </p>
+         <%= link_to 'Télécharger mon CV au format PDF', 'JulienGregoireFR.pdf', download: '',class: "button-download " %>
       </div>
    </div>
 </section>
@@ -51,8 +51,7 @@
                         Le projet réalisé durant ma formation au Wagon
                      </p>
                   </div>
-               </div>
-               <div class="carousel-controls">
+              <div class="carousel-controls">
                   <label for="img-3" class="prev-slide">
                   <span>&lsaquo;</span>
                   </label>
@@ -123,13 +122,8 @@
       </div>
    </div>
 </section>
-</section>
-<section class="section s4" data-anchor="project">
-   <div class="text">
-      <h2>Mon CV</h2>
-      <%= link_to 'Télécharger mon CV au format PDF', 'JulienGregoireFR.pdf', download: '',class: "button-download " %>
-   </div>
-</section>
+
+
 <section class="section s5" data-anchor="skills">
    <div class="text">
       <h2>Mes competences</h2>
@@ -144,6 +138,7 @@
       </p>
    </div>
 </section>
+</div>
 <section class="section s6" data-anchor="contact">
    <div class="text">
       <h2>Contact</h2>

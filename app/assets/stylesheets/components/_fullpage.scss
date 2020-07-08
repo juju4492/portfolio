@@ -11,6 +11,7 @@
   text-align: middle;
   width: 90vw;
   max-height: 90vh;
+  line-height: 1.6;
 }
 
 .content {
@@ -18,6 +19,9 @@
 }
 
 //Style adapté pour chaque section
+.body {
+background-image: linear-gradient(115deg, #86BBD8 10%, #FFE19C 100%);
+}
 .s1,
 .s2,
 .s3,
@@ -33,24 +37,13 @@
 }
 
 .s1 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590313455/moutain1.jpg");
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1594214002/welcome.jpg"
+);
 }
 
-.s2 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590313778/moutain2.jpg");
-}
-
-.s3 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590313895/moutain3.jpg");
-}
-
-.s4 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590314043/moutain4.jpg");
-}
-
-.s5 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590487491/skills.jpg");
-}
+// .s5 {
+//   background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590487491/skills.jpg");
+// }
 
 .s6 {
   background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590487507/contact.jpg");
