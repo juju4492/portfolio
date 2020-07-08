@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
+ruby '2.7.1'
 gem 'sprockets-rails', '2.3.3', groups: [:development, :test]
 # Internationnalisation des languages
 gem 'rails-i18n'
