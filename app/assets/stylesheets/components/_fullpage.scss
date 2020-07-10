@@ -36,10 +36,28 @@ background-image: linear-gradient(115deg, #86BBD8 10%, #FFE19C 100%);
   width: 100%;
 }
 
-.s1 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1594214002/welcome.jpg"
-);
+@media screen and (max-width: 767px) {
+    .s1{
+      background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1594375252/welcomeS.jpg");
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .s1{
+      background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1594375467/welcomeM.jpg");
+    }
+}
+@media (min-width: 992px) {
+      .s1{
+          background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1594375256/welcomeL.jpg");
+      }
+}
+@media (min-width: 1200px) {
+     .s1{
+         background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1594214002/welcomeXL.jpg");
+     }
+}
+
 
 // .s5 {
 //   background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590487491/skills.jpg");
