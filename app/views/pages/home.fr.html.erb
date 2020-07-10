@@ -17,16 +17,26 @@
          end  %>
       <%date = Date.today  %>
       <div class="content">
-         <p> Je suis un jeune développeur fullstack de
-            <%= age_at(date,dob) %> ans.</br></br>
-            Après avoir suivi une classe prépa ingénieur à la fin du lycée (j'aime concevoir et créer des solutions aux problèmes que je rencontre),
-            j'ai finalement fait un DUT Mesures Physiques qui correspondait mieux à mes attentes de l'époque (un enseignement scientifique basé à la fois sur
-            la pratique et la théorie). Une fois diplômé, j'ai travaillé pendant 1an et demi dans un laboratoire d'analyse d'amiante, Eurofins.
-            </br></br>
-            A la fin de mon contrat, j'ai effectué un premier virage professionnel en travaillant en tant que hotliner en informatique. L'informatique étant un domaine
-            qui me passionne, j'ai choisi de me reconvertir en réalisant une formation de développeur web fullstack durant 2 mois au sein de
-            <%= link_to 'Le Wagon Lyon', 'https://www.lewagon.com/fr/lyon', target: :_blank %>. J'ai obtenu ma certification en Décembre 2019.
-         </p>
+         <p>
+Je suis un développeur web fullstack de <%= age_at(date,dob) %> ans originaire de St Nazaire.
+</br></br>
+A la fin du lycée, j’ai commencé par suivre un parcours scientifique en faisant un DUT mesures
+physiques. J’ai par la suite effectué divers emplois dans des entreprises différentes,
+notamment chez Eurofins au service laboratoire d’analyse. </br></br>
+Pendant mon dernier contrat en tant que hotliner SAV en informatique , je me suis rendu
+compte que je voulais travailler dans le domaine qui me passionne depuis toujours, le
+développement informatique. J’ai donc décidé de me reconvertir en réalisant une formation
+intensive de développeur web fullstack au sein de l’organisme de formation
+<%= link_to 'Le Wagon Lyon', 'https://www.lewagon.com/fr/lyon', target: :_blank %>.
+Jai obtenu ma certification en décembre 2019 (équivalent à un BAC+2 en informatique).
+Depuis lors, j’ai réalisé divers projets, dont ce portfolio, que je vous invite à découvrir.
+</br></br>
+Ne vous fiez pas à la simplicité de certaines de mes réalisations, je suis capable de
+développer des sites bien plus complexes. Je suis passionné par ce que je fais et j’aime
+ =repousser mes limites et optimiser mes projets au maximum.
+</br></br>
+Si vous le souhaitez, vous pouvez consulter mon CV.
+</br></br>
          <%= link_to 'Télécharger mon CV au format PDF', 'JulienGregoireFR.pdf', download: '',class: "button-download " %>
       </div>
    </div>
