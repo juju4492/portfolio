@@ -10,7 +10,6 @@
   border-radius: 30px;
   text-align: middle;
   width: 90vw;
-  max-height: 90vh;
   line-height: 1.6;
 }
 
@@ -22,19 +21,7 @@
 .body {
 background-image: linear-gradient(115deg, #86BBD8 10%, #FFE19C 100%);
 }
-.s1,
-.s2,
-.s3,
-.s4,
-.s5,
-.s6,
-.s7 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-}
+
 
 @media screen and (max-width: 767px) {
     .s1{
@@ -54,10 +41,59 @@ background-image: linear-gradient(115deg, #86BBD8 10%, #FFE19C 100%);
 }
 
 
-// .s5 {
-//   background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590487491/skills.jpg");
-// }
+.contact {
+  padding: 5vh 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/v1590487507/contact.jpg");
+}
 
-.s6 {
-  background-image: url("https://res.cloudinary.com/desecdaxd/image/upload/q_auto:best/f_auto/v1590487507/contact.jpg");
+.about {
+  height : auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  padding-top: 5vh;
+}
+
+.middle {
+  padding: 5vh 0px;
+
+}
+
+.bottom {
+  padding-bottom: 5vh;
+}
+.project {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s1 {
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.s2 {
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

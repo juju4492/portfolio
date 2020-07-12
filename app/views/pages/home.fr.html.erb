@@ -6,7 +6,7 @@
 </section>
 
 <div class="body">
-<section class="section s2" data-anchor="about">
+  <div class="about top">
    <div class="text">
       <h2>A Propos </h2>
       <% dob = Date.new(1990,11,27)
@@ -33,15 +33,16 @@ Depuis lors, j’ai réalisé divers projets, dont ce portfolio, que je vous inv
 </br></br>
 Ne vous fiez pas à la simplicité de certaines de mes réalisations, je suis capable de
 développer des sites bien plus complexes. Je suis passionné par ce que je fais et j’aime
- =repousser mes limites et optimiser mes projets au maximum.
+repousser mes limites et optimiser mes projets au maximum.
 </br></br>
 Si vous le souhaitez, vous pouvez consulter mon CV.
 </br></br>
          <%= link_to 'Télécharger mon CV au format PDF', 'JulienGregoireFR.pdf', download: '',class: "button-download " %>
       </div>
    </div>
-</section>
-<section class="s3 section" data-anchor="project">
+   </div>
+
+<div class="project middle">
    <div class="text">
       <h2>Mes réalisations</h2>
       <div class="carousel">
@@ -131,10 +132,10 @@ Si vous le souhaitez, vous pouvez consulter mon CV.
          </ul>
       </div>
    </div>
-</section>
+   </div>
 
 
-<section class="section s5" data-anchor="skills">
+<div class="skills bottom">
    <div class="text">
       <h2>Mes competences</h2>
       <h3>Mes capacités en informatique</h3>
@@ -147,9 +148,9 @@ Si vous le souhaitez, vous pouvez consulter mon CV.
          A l'écoute
       </p>
    </div>
-</section>
 </div>
-<section class="section s6" data-anchor="contact">
+</div>
+<section class="contact s2" data-anchor="contact">
    <div class="text">
       <h2>Contact</h2>
       <%= render 'home/contact_form' , index: @contact %>
