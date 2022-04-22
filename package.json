@@ -4,7 +4,7 @@
   "dependencies": {
     "@rails/webpacker": "4.2.2",
     "check-files": "^0.0.2",
-    "fullpage.js": "^3.0.8",
+    "fullpage.js": "^4.0.5",
     "fullpages": "^1.0.2",
     "jquery": "^3.5.1",
     "owl.carousel": "^2.3.4",
